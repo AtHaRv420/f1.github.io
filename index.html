@@ -1,0 +1,64 @@
+import React from 'react';
+import './Frontend.css';
+
+function Frontend() {
+  return (
+    <div className="frontend-container">
+      <header>
+        <h1>F1 Experiences</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#races">Races</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="about">
+          <h2>About F1 Experiences</h2>
+          <p>Immerse yourself in the thrilling world of Formula 1 with our exclusive F1 Experiences packages. Get closer to the action than ever before!</p>
+        </section>
+        <section id="races">
+          <h2>Upcoming Races</h2>
+          <ul>
+            <li>Monaco Grand Prix</li>
+            <li>British Grand Prix</li>
+            <li>Italian Grand Prix</li>
+            <li>Singapore Grand Prix</li>
+          </ul>
+        </section>
+        <section id="packages">
+          <h2>Our Packages</h2>
+          <div className="package">
+            <h3>Paddock Club</h3>
+            <p>Experience F1 in luxury with exclusive access to the Paddock Club.</p>
+          </div>
+          <div className="package">
+            <h3>Champions Club</h3>
+            <p>Premium hospitality and the best views of the track.</p>
+          </div>
+          <div className="package">
+            <h3>F1 Experiences Turn 1</h3>
+            <p>Get close to the action with seats at the first turn.</p>
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <p>For more information about our F1 Experiences packages, please contact us:</p>
+          <p>Email: info@f1experiences.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+        </section>
+        <section id="chatbot">
+          {/* Chatbot component will be inserted here */}
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 F1 Experiences. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
+export default Frontend;
