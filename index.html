@@ -1,10 +1,18 @@
 import React from 'react';
 import './Frontend.css';
 
+// Import images
+import f1Logo from './images/f1-logo.jpg';
+import monacoGP from './images/monaco-gp.jpg';
+import paddockClub from './images/paddock-club.jpg';
+import championsClub from './images/champions-club.jpg';
+import turn1 from './images/turn-1.jpg';
+
 function Frontend() {
   return (
     <div className="frontend-container">
       <header>
+        <img src={f1Logo} alt="F1 Logo" className="logo" />
         <h1>F1 Experiences</h1>
         <nav>
           <ul>
@@ -22,26 +30,43 @@ function Frontend() {
         </section>
         <section id="races">
           <h2>Upcoming Races</h2>
-          <ul>
-            <li>Monaco Grand Prix</li>
-            <li>British Grand Prix</li>
-            <li>Italian Grand Prix</li>
-            <li>Singapore Grand Prix</li>
-          </ul>
+          <div className="race-grid">
+            <div className="race-item">
+              <img src={monacoGP} alt="Monaco Grand Prix" />
+              <p>Monaco Grand Prix</p>
+            </div>
+            <div className="race-item">
+              <img src="./images/british-gp.jpg" alt="British Grand Prix" />
+              <p>British Grand Prix</p>
+            </div>
+            <div className="race-item">
+              <img src="./images/italian-gp.jpg" alt="Italian Grand Prix" />
+              <p>Italian Grand Prix</p>
+            </div>
+            <div className="race-item">
+              <img src="./images/singapore-gp.jpg" alt="Singapore Grand Prix" />
+              <p>Singapore Grand Prix</p>
+            </div>
+          </div>
         </section>
         <section id="packages">
           <h2>Our Packages</h2>
-          <div className="package">
-            <h3>Paddock Club</h3>
-            <p>Experience F1 in luxury with exclusive access to the Paddock Club.</p>
-          </div>
-          <div className="package">
-            <h3>Champions Club</h3>
-            <p>Premium hospitality and the best views of the track.</p>
-          </div>
-          <div className="package">
-            <h3>F1 Experiences Turn 1</h3>
-            <p>Get close to the action with seats at the first turn.</p>
+          <div className="package-grid">
+            <div className="package">
+              <img src={paddockClub} alt="Paddock Club" />
+              <h3>Paddock Club</h3>
+              <p>Experience F1 in luxury with exclusive access to the Paddock Club.</p>
+            </div>
+            <div className="package">
+              <img src={championsClub} alt="Champions Club" />
+              <h3>Champions Club</h3>
+              <p>Premium hospitality and the best views of the track.</p>
+            </div>
+            <div className="package">
+              <img src={turn1} alt="F1 Experiences Turn 1" />
+              <h3>F1 Experiences Turn 1</h3>
+              <p>Get close to the action with seats at the first turn.</p>
+            </div>
           </div>
         </section>
         <section id="contact">
@@ -62,3 +87,6 @@ function Frontend() {
 }
 
 export default Frontend;
+
+
+
